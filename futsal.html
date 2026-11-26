@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>larisanta Futsal Mantang MBC</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #101710;
+            color: white;
+        }
+
+        header {
+            background: #17251a;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        header h2 {
+            color: #a5ff33;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 8px;
+        }
+
+        nav a:hover {
+            color: #a5ff33;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background: linear-gradient(135deg, #244b27, #101710);
+        }
+
+        .hero h1 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .hero span {
+            color: #a5ff33;
+        }
+
+        .hero p {
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+        .tombol {
+            display: inline-block;
+            background: #a5ff33;
+            color: #101710;
+            padding: 12px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            border: none;
+            cursor: pointer;
+        }
+
+        section {
+            padding: 55px 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2.judul {
+            text-align: center;
+            color: #a5ff33;
+            margin-bottom: 25px;
+            font-size: 30px;
+        }
+
+        .tentang {
+            text-align: center;
+            line-height: 1.8;
+            color: #d4ddd4;
+        }
+
+        .kartu-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .kartu {
+            background: #1c2a1e;
+            padding: 25px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid #354936;
+        }
+
+        .kartu h3 {
+            color: #a5ff33;
+            margin: 12px 0;
+        }
+
+        .booking {
+            background: #17251a;
+        }
+
+        form {
+            max-width: 600px;
+            margin: auto;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0 6px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            border-radius: 7px;
+            border: 1px solid #526452;
+            background: #101710;
+            color: white;
+            font-size: 16px;
+        }
+
+        form button {
+            margin-top: 20px;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        .lokasi {
+            text-align: center;
+        }
+
+        iframe {
+            width: 100%;
+            height: 350px;
+            border: 0;
+            border-radius: 12px;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #080d08;
+            text-align: center;
+            padding: 22px;
+            color: #c3cec3;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                text-align: center;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h2>⚽ MBC FUTSAL</h2>
+
+    <nav>
+        <a href="#beranda">Beranda</a>
+        <a href="#tentang">Tentang</a>
+        <a href="#fasilitas">Fasilitas</a>
+        <a href="#booking">Booking</a>
+        <a href="#lokasi">Lokasi</a>
+    </nav>
+</header>
+
+<section class="hero" id="beranda">
+    <h1>SELAMAT DATANG DI<br>
+        <span>larisanta MBC FUTSAL</span>
+    </h1>
+
+    <p>
+        Jaya Abadi, Mantang,<br>
+        Lombok Tengah, Nusa Tenggara Barat.
+    </p>
+
+    <a href="#booking" class="tombol">
+        Booking Lapangan
+    </a>
+</section>
+
+<section id="tentang">
+    <div class="container">
+        <h2 class="judul">Tentang Kami</h2>
+
+        <p class="tentang">
+            MBC Futsal merupakan tempat untuk bermain futsal,
+            berolahraga, berlatih, dan berkumpul bersama teman.
+            Mari bermain dengan semangat dan menjunjung sportivitas.
+        </p>
+    </div>
+</section>
+
+<section id="fasilitas">
+    <div class="container">
+        <h2 class="judul">Informasi Lapangan</h2>
+
+        <div class="kartu-container">
+            <div class="kartu">
+                <div style="font-size:40px;">⚽</div>
+                <h3>Lapangan Futsal</h3>
+                <p>Tempat bermain dan berlatih bersama tim.</p>
+            </div>
+
+            <div class="kartu">
+                <div style="font-size:40px;">📅</div>
+                <h3>Pemesanan</h3>
+                <p>Ajukan jadwal bermain melalui formulir booking.</p>
+            </div>
+
+            <div class="kartu">
+                <div style="font-size:40px;">📍</div>
+                <h3>Lokasi</h3>
+                <p>Jaya Abadi, Mantang, Lombok Tengah.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="booking" id="booking">
+    <div class="container">
+        <h2 class="judul">Booking Lapangan</h2>
+
+        <form id="formBooking">
+            <label>Nama Pemesan</label>
+            <input type="text" id="nama"
+                   placeholder="Masukkan nama kamu" required>
+
+            <label>Nomor WhatsApp</label>
+            <input type="tel" id="nomor"
+                   placeholder="Contoh: 08xxxxxxxxxx" required>
+
+            <label>Tanggal Bermain</label>
+            <input type="date" id="tanggal" required>
+
+            <label>Jam Bermain</label>
+            <select id="jam" required>
+                <option value="">Pilih jam bermain</option>
+                <option>08.00 - 09.00</option>
+                <option>09.00 - 10.00</option>
+                <option>10.00 - 11.00</option>
+                <option>13.00 - 14.00</option>
+                <option>14.00 - 15.00</option>
+                <option>15.00 - 16.00</option>
+                <option>16.00 - 17.00</option>
+                <option>17.00 - 18.00</option>
+                <option>18.00 - 19.00</option>
+                <option>19.00 - 20.00</option>
+                <option>20.00 - 21.00</option>
+                <option>21.00 - 22.00</option>
+            </select>
+
+            <label>Catatan</label>
+            <textarea id="catatan"
+                      placeholder="Pesan tambahan (opsional)"></textarea>
+
+            <button type="submit" class="tombol">
+                Kirim Booking WhatsApp
+            </button>
+        </form>
+    </div>
+</section>
+<img src="/Users/smkn1bk/Downloads/images (1).jpeg">
+<img src="/Users/smkn1bk/Downloads/images (2).jpeg">
+<img src="/Users/smkn1bk/Downloads/download (1).jpeg">
+<img src="/Users/smkn1bk/Downloads/download.jpeg">
+
+
+<section id="lokasi">
+    <div class="container lokasi">
+        <h2 class="judul">Lokasi MBC Futsal</h2>
+
+        <p>Jaya Abadi, Mantang, Lombok Tengah, NTB.</p>
+
+        <iframe
+            src="https://maps.google.com/maps?q=MBC%20Futsal%20Jaya%20Abadi%20Mantang%20Lombok%20Tengah%20NTB&output=embed"
+            loading="lazy"
+            allowfullscreen
+            title="Peta lokasi MBC Futsal">
+        </iframe>
+
+        <a class="tombol"
+           href="https://www.google.com/maps/search/?api=1&query=MBC+Futsal+Jaya+Abadi+Mantang+Lombok+Tengah+NTB"
+           target="_blank" rel="noopener">
+            Buka Google Maps
+        </a>
+
+        <p style="margin-top:15px;color:#c3cec3;font-size:13px;">
+            Periksa kembali pin Google Maps untuk memastikan lokasi lapangan.
+        </p>
+    </div>
+</section>
+
+<footer>
+    <p>© <span id="tahun"></span> MBC Futsal - Mantang, Lombok Tengah</p>
+</footer>
+
+<script>
+    // GANTI dengan nomor WhatsApp pengelola MBC Futsal.
+    // Format: 62 diikuti nomor, tanpa tanda + atau angka 0 di depan.
+    const whatsappPengelola = "0877865824730";
+
+    document.getElementById("tahun").textContent =
+        new Date().getFullYear();
+
+    document.getElementById("tanggal").min =
+        new Date().toISOString().split("T")[0];
+
+    document.getElementById("formBooking").addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        const nama = document.getElementById("nama").value.trim();
+        const nomor = document.getElementById("nomor").value.trim();
+        const tanggal = document.getElementById("tanggal").value;
+        const jam = document.getElementById("jam").value;
+        const catatan = document.getElementById("catatan").value.trim();
+
+        const pesan =
+            "Halo MBC Futsal, saya ingin booking lapangan.%0A%0A" +
+            "Nama: " + encodeURIComponent(nama) + "%0A" +
+            "Nomor pemesan: " + encodeURIComponent(nomor) + "%0A" +
+            "Tanggal: " + encodeURIComponent(tanggal) + "%0A" +
+            "Jam: " + encodeURIComponent(jam) + "%0A" +
+            "Catatan: " + encodeURIComponent(catatan || "-");
+
+        window.open(
+            "https://wa.me/" + whatsappPengelola + "?text=" + pesan,
+            "_blank"
+        );
+    });
+
+    
+</script>
+
+</body>
+</html>
